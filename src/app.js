@@ -9,7 +9,7 @@ window.onload = () => {
     "during my lunch",
     "while I was praying"
   ];
-
+  Le;
   document.querySelector("#mensaje1").innerHTML =
     who[Math.floor(Math.random() * who.length)];
   document.querySelector("#mensaje2").innerHTML =
