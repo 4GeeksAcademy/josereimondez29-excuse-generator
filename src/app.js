@@ -25,8 +25,7 @@ window.onload = () => {
   var what1 = document.querySelector("#mensaje3").innerHTML;
   var when1 = document.querySelector("#mensaje4").innerHTML;
 
-  console.log(who);
-  console.log(action);
+  
   console.log(what);
   console.log(when);
 };
