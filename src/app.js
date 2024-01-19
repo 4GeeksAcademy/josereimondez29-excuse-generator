@@ -10,23 +10,22 @@ window.onload = () => {
     "while I was praying"
   ];
 
-  document.querySelector("#mensaje1").innerHTML =
-    who[Math.floor(Math.random() * who.length)];
-  document.querySelector("#mensaje2").innerHTML =
-    action[Math.floor(Math.random() * action.length)];
-  document.querySelector("#mensaje3").innerHTML =
-    what[Math.floor(Math.random() * what.length)];
-  document.querySelector("#mensaje4").innerHTML =
-    when[Math.floor(Math.random() * when.length)];
+  function selectItemOfArray(array) {
+    return array[Math.floor(Math.random() * array.length)];
+  }
+
+  let message = `${selectItemOfArray(who)} ${selectItemOfArray(action)}
+   ${selectItemOfArray(what)} ${selectItemOfArray(when)}`;
+  document.getElementById("excuse").textContent = message;
 
   // Imprimir en la consola los elementos seleccionados
-  var who1 = document.querySelector("#mensaje1").innerHTML;
+  /*var who1 = document.querySelector("#mensaje1").innerHTML;
   var action1 = document.querySelector("#mensaje2").innerHTML;
   var what1 = document.querySelector("#mensaje3").innerHTML;
   var when1 = document.querySelector("#mensaje4").innerHTML;
 
-  console.log(who);
-  console.log(action);
-  console.log(what);
-  console.log(when);
+  console.log(who1);
+  console.log(action1);
+  console.log(what1);
+  console.log(when1);*/
 };
